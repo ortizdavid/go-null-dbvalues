@@ -10,7 +10,7 @@ type CustomerModel struct {
 }
 
 func (cm *CustomerModel) Create(c entities.Customer) error {
-	db, err := sql.Open("mysql", "root:003334743LA032@tcp(127.0.0.1:3306)/go_null_dbvalues")
+	db, err := sql.Open("mysql", "root:PASSWORD@tcp(127.0.0.1:3306)/go_null_dbvalues")
 	if err != nil {
 		return err
 	}
